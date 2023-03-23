@@ -4,12 +4,12 @@ http:
   mitm:
     - 'mb3admin.com'
   script:
-    - match: ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey)
+    - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
       name: emby
       type: response
       require-body: true
       timeout: 10
 script-providers:
   emby:
-    url: https://subweb.s3.fr-par.scw.cloud/Script/embycrack.js
+    url: https://raw.githubusercontent.com/Tartarus2014/Script/master/Emby.js
     interval: 86400
