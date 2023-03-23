@@ -5,14 +5,14 @@ name: 猫头鹰文件
 desc: 无
 http:
   mitm:
-    - www.skyjos.cn
+    - 'www.skyjos.cn'
   script:
-    - match: ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*
-      name: KuWoMusic
+    - match: ^https://www.skyjos.cn:58080/ws/(loadaccountinfo|validate)
+      name: mtyfile
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  KuWoMusic:
-    url: https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
+  mtyfile:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/mty.js
     interval: 86400
