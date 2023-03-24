@@ -1,3 +1,7 @@
+#!name= emby
+#!other= emby.Stash.stoverride
+
+
 name: emby
 desc: 无
 http:
