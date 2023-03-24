@@ -1,8 +1,6 @@
-#!name= emby
-#!other= emby.Stash.stoverride
-
 name: emby
-desc: 无
+desc: 解锁
+
 http:
   mitm:
     - 'mb3admin.com'
