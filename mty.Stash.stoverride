@@ -2,17 +2,17 @@
 #!other=mty.Stash.stoverride
 
 name: 猫头鹰文件
-desc: 无
+desc: 猫头鹰文件--解锁VIP
 http:
   mitm:
     - www.skyjos.cn'
   script:
     - match: ^https:\/\/www\.skyjos\.cn:58080\/ws\/loadaccountinfo
-      name: mtyfile
+      name: mtywj.js
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  mtyfile:
+  mtywj.js:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtywj.js
     interval: 86400
