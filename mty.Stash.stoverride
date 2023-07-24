@@ -7,12 +7,12 @@ http:
   mitm:
     - www.skyjos.cn'
   script:
-    - match: ^https:\/\/www\.skyjos\.cn:58080\/ws\/loadaccountinfo
+    - match: ^https?:\/\/www\.skyjos\.cn
       name: mtywj.js
       type: response
       require-body: true
       timeout: 10
 script-providers:
   mtywj.js:
-    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtywj.js
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
     interval: 86400
